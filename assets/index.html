@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <h1>&copy; Felipe Keenan</h1>
+        <div class="calculadora">
+            <h2>Calculadora</h2>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <th><button onclick="clean()">C</button></th>
+                    <th><button onclick="apagar()"><</button></th>
+                    <th><button onclick="numeros('/')">/</button></th>
+                    <th><button onclick="numeros('*')">X</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="numeros(7)">7</button></th>
+                    <th><button onclick="numeros(8)">8</button></th>
+                    <th><button onclick="numeros(9)">9</button></th>
+                    <th><button onclick="numeros('-')">-</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="numeros(4)">4</button></th>
+                    <th><button onclick="numeros(5)">5</button></th>
+                    <th><button onclick="numeros(6)">6</button></th>
+                    <th><button onclick="numeros('+')">+</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="numeros(1)">1</button></th>
+                    <th><button onclick="numeros(2)">2</button></th>
+                    <th><button onclick="numeros(3)">3</button></th>
+                    <th><button></button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="numeros(0)">0</button></th>
+                    <th><button></button></th>
+                    <th rowspan="2"><button id="ponto" onclick="numeros('.')">.</button></th> <!--ROWSPAN E COLSPAN pra colocar no espaço de 2-->
+                    <th colspan="2"><button id="igual" onclick="calcular()">=</button></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
